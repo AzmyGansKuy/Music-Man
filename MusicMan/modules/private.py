@@ -39,18 +39,17 @@ logging.basicConfig(level=logging.INFO)
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>┗┓ Haii {message.from_user.first_name} saya adalah {PROJECT_NAME} ┏┛\n
-Saya Bot Music Group, Yang dapat Memutar Lagu di Voice Chat Group Dengan cara yang Mudah
+        f"""<b>Haii {message.from_user.first_name} saya adalah {PROJECT_NAME}\n
+Saya Bot Music Group, Yang Telah Di Rancang Khusus Untuk Menemani Anda Di Vcg
 Saya Memiliki Banyak Fitur Praktis Seperti :
-┏━━━━━━━━━━━━━━
-┣• Memutar Musik.
-┣• Mendownload Lagu.
-┣• Mencari Lagu Yang ingin di Putar atau di Download.
-┣• Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
-┗━━━━━━━━━━━━━━
-❃ Managed With ❤ By {OWNER}
-❃ Thanks To [Risman](https://t.me/mrismanaziz)
-━━━━━━━━━━━━━━━
+... ____________________________ ...
+ 🔵Memutar Musik.
+ 🔵Mendownload Lagu.
+ 🔵Mencari Lagu Yang ingin di Putar atau di Download.
+ 🔵Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap saya
+... _____________________________ ...
+❃ Pemilik 👻 Bot {OWNER}
+
 Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
 </b>""",
 
@@ -69,7 +68,7 @@ Ingin Menambahkan Saya ke Grup Anda? Tambahkan Saya Ke Group Anda!
                         "⛑ Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "Asissten Bot❤️", url=f"https://t.me/SujandraAsissten")
                 ]
             ]
         ),
@@ -125,7 +124,7 @@ def map(pos):
             ],
             [
                 InlineKeyboardButton(
-                    text='🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}"
+                    text='Asissten Bot ❤️', url=f"https://t.me/SujandraAsissten"
                 )
             ],
             [InlineKeyboardButton(text='«', callback_data=f"help+{pos-1}")],
